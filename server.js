@@ -10,17 +10,17 @@ app.use(express.json())
 const credentials = require('./credentials.json');
 const token = require('./token.json')
 
-// Create OAuth2 client
-const oAuth2Client = new OAuth2Client(
-  credentials.installed.client_id,
-  credentials.installed.client_secret,
-  credentials.installed.redirect_uris[0]
-);
+// // Create OAuth2 client
+// const oAuth2Client = new OAuth2Client(
+//   credentials.installed.client_id,
+//   credentials.installed.client_secret,
+//   credentials.installed.redirect_uris[0]
+// );
 
-// Set up the OAuth2 client
-oAuth2Client.setCredentials({
-  refresh_token: token.refresh_token,
-});
+// // Set up the OAuth2 client
+// oAuth2Client.setCredentials({
+//   refresh_token: token.refresh_token,
+// });
 
 // Create a transport for sending emails
 const transporter = nodemailer.createTransport({
