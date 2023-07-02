@@ -17,10 +17,10 @@ const token = require('./token.json')
 //   credentials.installed.redirect_uris[0]
 // );
 
-// // Set up the OAuth2 client
-// oAuth2Client.setCredentials({
-//   refresh_token: token.refresh_token,
-// });
+// Set up the OAuth2 client
+oAuth2Client.setCredentials({
+  refresh_token: token.refresh_token,
+});
 
 // Create a transport for sending emails
 const transporter = nodemailer.createTransport({
