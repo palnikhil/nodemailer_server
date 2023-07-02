@@ -7,8 +7,8 @@ const app = express();
 const port = 3000;
 app.use(express.json())
 // Load client credentials
-const credentials = require('./credentials.json');
-const token = require('./token.json')
+// const credentials = require('./credentials.json');
+// const token = require('./token.json')
 
 // // Create OAuth2 client
 // const oAuth2Client = new OAuth2Client(
